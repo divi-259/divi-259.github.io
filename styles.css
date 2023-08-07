@@ -13,7 +13,7 @@ body {
 
 /* Style header */
 header {
-    background-color: #007bff;
+    background-color: #6894c4;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -21,5 +21,14 @@ header {
 
 /* Style navigation */
 nav ul {
-   
+   text-align: center;
+   color: #007bff;
+   background-color: white;
+}
+
+section {
+    background-color: #6894c4;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
