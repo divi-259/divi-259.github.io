@@ -1,34 +1,79 @@
 /* Reset default margins and padding */
-body, h1, h2, h3, ul, li {
+
+body, h1, h2, h3, ul, li, p{
     margin: 0;
     padding: 0;
 }
 
 /* Set background color and text color */
 body {
-    background-color: #f5f5f5;
-    color: #333;
-    font-family: Arial, sans-serif;
+    background-color: #001524;
+    /* color: #333; */
+    font-family: 'Changa', sans-serif;
+    font-size: 16px;
 }
 
 /* Style header */
 header {
-    background-color: #6894c4;
-    color: white;
+    color: #FDE5D4;
     text-align: center;
     padding: 1rem 0;
 }
-
 /* Style navigation */
-nav ul {
+/* nav ul {
    text-align: center;
-   color: #007bff;
-   background-color: white;
-}
+   color: #435334;
+   background-color: CEDEBD;
+} */
 
 section {
-    background-color: #6894c4;
-    color: white;
+    color: #001524;
     text-align: center;
     padding: 1rem 0;
+}
+
+#about {
+    color: #001524;
+    background-color: #567e5d;
+    margin: 0 auto; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 220px;
+    width: 750px; 
+    padding: 1rem 0;
+    border-style: double;
+    border-radius: 40px;
+    border-width: 1cm;    
+}
+#projects {
+    background-color: #D6CC99;
+    margin: 0 auto; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 220px;
+    width: 750px; 
+    padding: 1rem 0;
+    border-style: double;
+    border-radius: 40px;
+    border-width: 1cm;  
+}
+#certifications {
+    background-color: #D6CC99;
+    margin: 0 auto; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 220px;
+    width: 750px; 
+    padding: 1rem 0;
+    border-style: double;
+    border-radius: 40px;
+    border-width: 1cm;  
+}
+#contact {
+    background-color: #FDE5D4;
+    margin: 0 auto; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 220px;
+    width: 550px; 
+    padding: 1rem 0;
+    border-style: double;
+    border-radius: 40px;
+    border-width: 1cm;  
 }
