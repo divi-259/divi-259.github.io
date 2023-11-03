@@ -137,6 +137,9 @@ section {
 .tdname {
     color:#9c3737;
 }
+.tdnumber {
+    width: fit-content;
+}
 
 /* --------------- CSS for Contact Section ---------------*/
 #contact {
