@@ -20,7 +20,7 @@ header {
 
 /* Image styling */
 .responsive {
-    width: 10%;
+    width: 20%;
     height: auto;
   }
 
@@ -66,7 +66,8 @@ section {
     color: rgb(248, 248, 248);
     background-color: #672323;
     margin: 0 auto; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    align-items: center; 
+    /* Center vertically */
     width: 80%; 
     padding: 1rem 0;
     border-style: double;
@@ -75,7 +76,7 @@ section {
     border-color: #001524;
 }
 #contact {
-    background-color: #FDE5D4;
+    background-color: #ffffff;
     margin: 0 auto; /* Center horizontally */
     align-items: center; /* Center vertically */
     width: 50%; 
@@ -93,6 +94,7 @@ section {
     padding:7px;
     table-layout: fixed;
     margin: 3% 10%;
+    color: #313030;
 }
 #demTable th {
     border:1px solid #b3adad;
@@ -105,9 +107,18 @@ section {
     border:1px solid #b3adad;
     text-align:center;
     padding:7px;
-    background: #e6ddb3;
-    color: #313030;
+    background: #ffffff;
+    /* color: #313030; */
     word-wrap: break-word;
+}
+#demTable td ul{
+    list-style-position:inside;
+}
+.tdproject {
+    text-align:left;
+}
+.tdname {
+    color:#9c3737;
 }
 #worktable {
     width:80%;
@@ -128,8 +139,8 @@ section {
     border:1px solid #b3adad;
     text-align:center;
     padding:7px;
-    background: #e6ddb3;
-    color: #313030;
+    background: #672323;
+    color: #ffffff;
     word-wrap: break-word;
 }
 contacttable {
