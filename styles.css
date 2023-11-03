@@ -1,34 +1,31 @@
+/* --------------- Universal settings for elements --------------- */
 body, h1, h2, h3, ul, li, p{
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
 
-/* Set background color and font */
+/* --------------- CSS Styling for Body --------------- */
 body {
     background-color: #001524;
     font-family: 'Changa', sans-serif;
     font-size: 16px;
 }
 
-/* Style header */
+/* --------------- CSS Styling for Header --------------- */
 header {
     color: #FDE5D4;
     text-align: center;
     padding: 1rem 0;
 }
 
-/* Image styling */
-.responsive {
-    width: 20%;
-    height: auto;
-  }
-
+/* --------------- CSS Styling for Section Element --------------- */
 section {
     text-align: center;
     padding: 1rem 0;
 }
 
+/* --------------- CSS Properties for About Section --------------- */
 #about {
     color: rgb(248, 248, 248);
     background-color: #672323;
@@ -41,6 +38,13 @@ section {
     border-width: 0.5cm;    
     border-color: #001524;
 }
+/* Image styling */
+.responsive {
+    width: 20%;
+    height: auto;
+  }
+
+/* --------------- CSS Properties for FAQ or Common Questions Section --------------- */
 #faq {
     background-color: #ffffff;
     margin: 0 auto;
@@ -61,64 +65,6 @@ section {
 }
 #ans {
     color: rgb(46, 69, 220);   
-}
-#projects {
-    color: rgb(248, 248, 248);
-    background-color: #672323;
-    margin: 0 auto; /* Center horizontally */
-    align-items: center; 
-    /* Center vertically */
-    width: 80%; 
-    padding: 1rem 0;
-    border-style: double;
-    border-radius: 20px;
-    border-width: 0.5cm;  
-    border-color: #001524;
-}
-#contact {
-    background-color: #ffffff;
-    margin: 0 auto; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 50%; 
-    padding: 1rem 0;
-    word-wrap: break-word;
-    border-style: double;
-    border-radius: 40px;
-    border-width: 1cm;  
-    border-color: #001524;
-}
-#demTable {
-    width:80%;
-    border:1px solid rgb(173, 174, 179);
-    border-collapse:collapse;
-    padding:7px;
-    table-layout: fixed;
-    margin: 3% 10%;
-    color: #313030;
-}
-#demTable th {
-    border:1px solid #b3adad;
-    padding:7px;
-    background: #001524;
-    color: #ffffff;
-    word-wrap: break-word;
-}
-#demTable td {
-    border:1px solid #b3adad;
-    text-align:center;
-    padding:7px;
-    background: #ffffff;
-    /* color: #313030; */
-    word-wrap: break-word;
-}
-#demTable td ul{
-    list-style-position:inside;
-}
-.tdproject {
-    text-align:left;
-}
-.tdname {
-    color:#9c3737;
 }
 #worktable {
     width:80%;
@@ -143,11 +89,67 @@ section {
     color: #ffffff;
     word-wrap: break-word;
 }
-contacttable {
-    font-family: Helvetica, sans-serif;
+
+/* ---------------CSS properties for Project Section and the table element ---------------*/
+#projects {
+    color: rgb(248, 248, 248);
+    background-color: #672323;
+    margin: 0 auto; /* Center horizontally */
+    align-items: center; 
+    /* Center vertically */
+    width: 80%; 
+    padding: 1rem 0;
+    border-style: double;
+    border-radius: 20px;
+    border-width: 0.5cm;  
+    border-color: #001524;
+}
+#projectTable {
+    width:80%;
+    border:1px solid rgb(173, 174, 179);
+    border-collapse:collapse;
+    padding:7px;
+    table-layout: fixed;
+    margin: 3% 10%;
+    color: #313030;
+}
+#projectTable th {
+    border:1px solid #b3adad;
+    padding:7px;
+    background: #001524;
+    color: #ffffff;
+    word-wrap: break-word;
+}
+#projectTable td {
+    border:1px solid #b3adad;
     text-align:center;
     padding:7px;
-    
+    background: #ffffff;
+    /* color: #313030; */
+    word-wrap: break-word;
+}
+#projectTable td ul{
+    list-style-position:inside;
+}
+.tdproject {
+    text-align:left;
+}
+.tdname {
+    color:#9c3737;
+}
+
+/* --------------- CSS for Contact Section ---------------*/
+#contact {
+    background-color: #ffffff;
+    margin: 0 auto; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 50%; 
+    padding: 1rem 0;
+    word-wrap: break-word;
+    border-style: double;
+    border-radius: 40px;
+    border-width: 1cm;  
+    border-color: #001524;
 }
 .links {
     text-decoration: none; 
@@ -160,3 +162,4 @@ contacttable {
 .leftcol {
     font-family: inherit; line-height: 18px;  width: 660px; padding-top: 4px; padding-left: 0; text-align: center;
 }
+
