@@ -20,7 +20,7 @@ header {
 
 /* Image styling */
 .responsive {
-    width: 10%;
+    width: 20%;
     height: auto;
   }
 
@@ -75,7 +75,7 @@ section {
     border-color: #001524;
 }
 #contact {
-    background-color: #FDE5D4;
+    background-color: #ffffff;
     margin: 0 auto; /* Center horizontally */
     align-items: center; /* Center vertically */
     width: 50%; 
@@ -105,7 +105,7 @@ section {
     border:1px solid #b3adad;
     text-align:center;
     padding:7px;
-    background: #e6ddb3;
+    background: #ffffff;
     color: #313030;
     word-wrap: break-word;
 }
@@ -128,8 +128,8 @@ section {
     border:1px solid #b3adad;
     text-align:center;
     padding:7px;
-    background: #e6ddb3;
-    color: #313030;
+    background: #672323;
+    color: #ffffff;
     word-wrap: break-word;
 }
 contacttable {
