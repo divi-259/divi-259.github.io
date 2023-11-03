@@ -109,6 +109,7 @@ section {
     border:1px solid rgb(173, 174, 179);
     border-collapse:collapse;
     padding:7px;
+    /* To keep table inside the section elements and responsive for all devices */
     table-layout: fixed;
     margin: 3% 10%;
     color: #313030;
@@ -125,11 +126,12 @@ section {
     text-align:center;
     padding:7px;
     background: #ffffff;
-    /* color: #313030; */
+    /* to keep the data within table even in table view */
     word-wrap: break-word;
 }
 #projectTable td ul{
-    list-style-position:inside;
+    /* To keep bullets of list from overflowing */
+    list-style-position:inside; 
 }
 .tdproject {
     text-align:left;
@@ -138,7 +140,7 @@ section {
     color:#9c3737;
 }
 .tdnumber {
-    width: fit-content;
+    color:#9c3737;
 }
 
 /* --------------- CSS for Contact Section ---------------*/
