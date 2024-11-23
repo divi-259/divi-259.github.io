@@ -1,222 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divyanshi Dixit Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Noto+Sans:wght@200;400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h2>Welcome to My Portfolio &#128075;</h2>
-        
-    </header>     
-    
-    <section id="about">
-        <h2>Who am I?</h2>
-        <img src="img/ProfilePic.jpg" alt="ProfilePic" class="responsive">
+  <!-- Hero Section -->
+  <header class="hero">
+    <section id="intro" class="intro">
+    <div class="hero-content">
+      <h1>Hi, I'm Divyanshi</h1>
+      <p>I'm a software engineer with experience in backend technologies.</p>
+      <a href="#about" class="btn">ABOUT ME</a>
+      <a href="#projects" class="btn">MY WORK</a>
+      <a href="#skills" class="btn">SKILLS</a>
+      <a href="#experience" class="btn">EXPERIENCE</a>
+      <a href="#contact" class="btn">CONTACT</a>
+    </div>
+    </section>
+  </header>
+  <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+        <h2>About Me</h2>
         <p>
-            <h3>Hey There. My Name is Divyanshi and I am a Software Engineer residing in Seattle, USA. &#x1F4BB;</h3>
+            Hi, I'm Divyanshi Dixit, a Software Engineer specializing in backend development. With expertise in C++, Java, TypeScript, Node.js, Python, and Cloud platforms, I focus on building scalable and efficient systems. I’m passionate about automating workflows using Bash and PowerShell and always strive for clean, maintainable code.
+
+I’m driven by the challenge of solving complex problems and continuously learning new technologies to stay ahead in the ever-evolving tech landscape.
         </p>
-        <p>
-            <h3> I have a master's in Computer Science and around 4 years of industry experience in Software Development.👨&#x200D;💻</h3>
-        </p>
-        
-    </section>
-    <section id="faq">
-        <h2 >Common Questions/Answers about me</h2><br>
-        <p> This section has common questions and their answers concerning my visa status, education, and work experience.</p>
-        <div class="faqdiv">        
-        <h3 id="subheading">My visa status, location etc:</h3>
-        <h4>What is my Visa Status? </h4> 
-        <p id="ans">I am currently on L2 Visa, and that makes me eligible to work without any EAD in USA.</p>
-        <h4>Where do I currently reside? </h4> 
-        <p id="ans">I reside in Kirkland WA, USA (98034).</p>
-        <h4>Can I work onsite? Am I willing to relocate? </h4> 
-        <p id="ans">I can easily commute to Kirkland, Redmond, Bellevue, and Seattle if needed. I am open to relocation in WA and CA states only. </p>
-        <h4>From when can I start working? </h4> 
-        <p id="ans">I am actively looking for jobs and can start immediately.</p>
-        <h4>Am I willing to work on contract basis? </h4> 
-        <p id="ans">Yes.</p><br>
-
-        <h3 id="subheading">My Education:</h3>
-        <h4>What is my education status? </h4> 
-        <p id="ans">I have a Bachelors and Masters degree in computer Science.</p><br>
-
-        <h3 id="subheading">My Work Experience:</h3>
-        <h4>Where did I work in my four years of professional experience? </h4> 
         </div>
-        <table id="worktable">
-            <thead>
-                <tr>
-                    <th>Company Name</th>
-                    <th>Position Title</th>
-                    <th>Duration</th>
-                    <th>Tech Experience</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>SLB&nbsp;</td>
-                    <td>Backend Software Engineer&nbsp;</td>
-                    <td>2.8 Years&nbsp;</td>
-                    <td>Cloud Computing, Devops, NodeJS, Microservices Architecture&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>SMS Magic&nbsp;</td>
-                    <td>Software Developer&nbsp;</td>
-                    <td>6 Months</td>
-                    <td>Salesforce, Apex, SOQL, Java</td>
-                </tr>
-                <tr>
-                    <td>Nvidia&nbsp;</td>
-                    <td>Software GPU Intern&nbsp;</td>
-                    <td>7 Months&nbsp;</td>
-                    <td>GPU, C++, Linux Kernel, Bash Scripting, GDB debugging&nbsp;</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="faqdiv">
-            <h3 id="subheading">Miscellaneous:</h3>
-            <h4>What programming languages I know? </h4> 
-            <p id="ans">I have experience working with C++, Java, Golang, Typescript(NodeJS runtime). I have used Bash, Powershell and Python as well for scripting purposes.</p>
-
-            <h4>What Technologies I have worked on? </h4> 
-            <p id="ans">I have experience working with NodeJS(Mostly backend work), Cloud Computing (managing VMs, deploying services), Apex(a wrapper on Java language), C++ Monolithic Code. 
-            The details of which you can find in the projects section below.</p>
-            <h4>What techstacks or languages I am open to working at? </h4> 
-            <p id="ans">I am open to working in any tech stack as far as I will be working on mostly backend part of the codebase.
-                My logical part of the brain dominates the creative one, this is also why my portfolio might not seem enchanting. 
-                And believe me even creating this took me 3-4 days of time.
-            </p>
-            <h4>What did I do past one year? </h4> 
-            <p id="ans">After coming to US, with the layoffs starting everywhere, it was a difficult time. 
-                I worked on some personal goals during this time. 
-                I also started working on my problem-solving abilities. This is my leetcode progress - <a href="https://leetcode.com/booleanbit1">Leetcode_Profile</a>. 
-                I also learned LLD and a bit of HLD. I did 2-3 projects as well. And now I feel that I am ready to work in an organization where 
-                people are valued, they have a growth mindset, and willingness to learn and adapt, optimistic approach towards challenges and empathy for everyone.
-            </p>
-            <h4>What are my salary expectations? </h4> 
-            <p id="ans">I have masters degree in Computer Science as well as four years of decent work experience. I expect a competitive salary as per 
-               market standards.
-            </p>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="/img/ProjectProxyImage.jpg" alt="Project Image" class="project-img">
+                <h3>Project Title</h3>
+                <p>Project description goes here. Highlight key features or technologies used.</p>
+                <a href="#" target="_blank" class="btn">View Project</a>
+              </div>              
+              <div class="project">
+                <img src="/img/ProjectProxyImage.jpg" alt="Project Image" class="project-img">
+                <h3>Project Title</h3>
+                <p>Project description goes here. Highlight key features or technologies used.</p>
+                <a href="#" target="_blank" class="btn">View Project</a>
+              </div>              
+              <div class="project">
+                <img src="/img/ProjectProxyImage.jpg" alt="Project Image" class="project-img">
+                <h3>Project Title</h3>
+                <p>Project description goes here. Highlight key features or technologies used.</p>
+                <a href="#" target="_blank" class="btn">View Project</a>
+              </div>              
+            <div class="project">
+                <div class="project">
+                    <img src="/img/ProjectProxyImage.jpg" alt="Project Image" class="project-img">
+                    <h3>Project Title</h3>
+                    <p>Project description goes here. Highlight key features or technologies used.</p>
+                    <a href="#" target="_blank" class="btn">View Project</a>
+                  </div>              
+                <div class="project">
         </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">
+            <h3>Languages</h3>
+            <p>
+                <ul>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Golang</li>
+                    <li>TypeScript</li>
+                </ul></p>
+            </div>
+            <div class="skill">
+            <h3>Backend & Frameworks</h3>
+            <p>
+                <ul>
+                    <li>Salesforce using Apex</li>
+                    <li>NodeJS</li>
+                    <li>Express</li>
+                    <li>REST APIs</li>
+                </ul></p>
+            </div>
+            <div class="skill">
+            <h3>Cloud & DevOps</h3>
+            <p>
+                <ul>
+                    <li>Google Cloud</li>
+                    <li>Azure Cloud</li>
+                    <li>CI/CD</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Jenkins</li>
+                </ul></p>
+            </div>
+            <div class="skill">
+            <h3>Scripting</h3>
+            <p><ul>
+                <li>Python</li>
+                <li>Powershell</li>
+                <li>Bash</li>
+            </ul></p>
+            </div>
+            <div class="skill">
+            <h3>Tools & Others</h3>
+            <p>
+            <ul>
+                <li>Git, Github, Gitlab</li>
+                <li>SQL and Cloud SQL</li>
+                <li>MySQL, Redis and Cloud datastores</li>
+                <li>Postman and Curl</li>
+                <li>Swagger and YAML</li>
+                <li>Linux and Unix </li>
+            </ul>
+            </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <div class="education-item">
+            <h3>University of Allahabad</h3>
+            <p><b>Bachelor of Technology in Computer Science</b></p>
+            <p>GPA: 3.2/4</p>
+            <p>Relevant Courses: Data Structures, Algorithms, Database Systems, Computer Networks, Artificial Intelligence, Digital Electronics, Compiler Design, Theory of Computation,</p>
+            
+            </div>
+            <div class="education-item">
+                <h3>Motilal Nehru National Institute of Technology</h3>
+                <p><b>Master of Technology in Computer Science</b></p>
+                <p>GPA: 3.7/4</p>
+                <p>Relevant Courses: Advanced Algorithms, Advanced data Modeling, Wireless and Mobile Networks, Advanced Computer Networks</p>
+                
+                </div>
+            <div class="education-item">
+            <h3>Certifications</h3>
+            <ul>
+                <li><a href="https://www.hackerrank.com/certificates/b46bef84ba57" target="_blank">Java Intermediate Certificate</a></li>
+                <li><a href="https://www.hackerrank.com/certificates/d27cc9c6f962" target="_blank">Hackerrank Problem Solving Certificate </a></li>
+                <li><a href="https://moonshot.scaler.com/s/sl/23rcv7dC0N?_gl=1*1evjfy1*_ga*NzU1Nzk0NTczLjE2OTAxNTg4Njk.*_ga_53S71ZZG1X*MTY5MjY2NzM0MS4xNS4xLjE2OTI2NzI1OTIuMC4wLjA." target="_blank">SQL Vs. NoSQL Course</a></li>
+                <li><a href="https://moonshot.scaler.com/s/sl/f_DULMOw5H?_gl=1*1id0pua*_ga*NzU1Nzk0NTczLjE2OTAxNTg4Njk.*_ga_53S71ZZG1X*MTY5MDU3OTI3Ny4zLjEuMTY5MDU4NDUzNC4wLjAuMA.." target="_blank">Maths for Programmers</a></li>
+            </ul>
+            <h3>Online Presence</h3>
+            <ul>
+                <li><a href="https://leetcode.com/u/booleanbit1/" target="_blank">Leetcode Profile</a></li>
+                <li><a href="https://www.geeksforgeeks.org/user/boolean1/?ref=header_profile" target="_blank">Geeksforgeeks Profile</a></li>
+                <li><a href="https://www.hackerrank.com/profile/booleanbit1" target="_blank">Hackerrank Profile</a></li>
+                <li><a href="https://booleanbit1.substack.com/" target="_blank">Substack Profile (Tech Articles)</a></li>
+                <li><a href="https://booleanbit1.hashnode.dev/" target="_blank">HashNode Profile (Tech Articles)</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+  
+  
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+        <h2>Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-item">
+            <h3>Software GPU Intern - Nvidia</h3>
+            <p>Aug 2018 - Mar 2019</p>
+            <p>
+                <ul>
+                    <li>Worked on NVAPI SDK Support for Linux OS in NVAPI Team using C++</li>
+                    <li>Developed a testing tool to automate testing for more than 150 APIs with 100% test coverage.</li>
+                    <li>Used GDB Debugger for debugging and testing the NV-APIs</li>
+                    <li>Tested and modified different generation GPUs features using internal testing tool</li>
+                </ul>
+            </p>
+            </div>
+            <div class="experience-item">
+            <h3>Software Developer - SMS Magic Mobile Media Pvt. Ltd. </h3>
+            <p>Jul 2019 - Jan 2020</p>
+            <p>
+                <ul>
+                    <li>Designed and developed new billing features, including a customized subscription plan with per message, monthly,
+                        and annual billing options.</li>
+                    <li>Built a dashboard for end customers to view messaging data.</li>
+                    <li>Implemented and maintained RESTful APIs for the messaging system using Java.
+                    </li>
+                </ul>
+            </p>
+            </div>
+            <div class="experience-item">
+                <h3>Software Engineer - SLB (formly Schlumberger)</h3>
+                <p>Jan 2020 - Nov 2022</p>
+                <p>
+                    <ul>
+                        <li>Leveraged Golang, Google Pub/Sub, and Bash scripting to design and implement an internal file sync infrastructure,
+                            improving the company's file management capabilities.</li>
+                        <li>Lead a VM deletion project utilizing Azure and Google Cloud platform and using Azuredevops pipeline, resulting in
+                            nearly 50% cost savings for the company</li>
+                        <li>Streamlined API development and maintenance by transitioning to Axios and implementing correlation ID logging and
+                            functional testing using Postman
+                        </li>
+                        <li>Created automated testing and deployment pipelines with Azure DevOps, for image testing and deployments.</li>
+                    </ul>
+                </p>
+                </div>
+        </div>
+        </div>
+    </section>
+  
+  <!-- Contact Me Section -->
+<section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you have any questions, feel free to reach out!</p>
+  
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xldelqan" method="POST">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+  
+      <!-- Contact Info Section with Icons -->
+      <div class="contact-info">
+        <p>Or you can reach me via:</p>
         
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>    
-        <table id="demTable">
-            <thead>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                    <th>Language & Technologies used</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="tdname">NVAPI SDK Support for Linux &nbsp;[Company: Nvidia, Duration:08/2018-03/2019]&nbsp;</td>
-                    <td>
-                        <ul>
-                            <li class="tdproject">NVAPI SDK allows direct access to NVIDIA GPUs and Drivers on all windows Platforms. </li>
-                            <li class="tdproject">Extended support of 70+ APIs to Linux platform</li>
-                            <li class="tdproject">Created a test tool to test all 70 APIs in Windows and Linux platforms for 7+ families of GPUs.</li>
-                        </ul>
-                        &nbsp;
-                    </td>
-                    <td>Linux OS, C++, GPUs, Bash Scripting, makefile, GDB Debugger, Perforce, internal tools&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="tdname">Customized Subscription Plan &nbsp; [Company: SMS-Magic, Duration:07/2019-11/2019]</td>
-                    <td>
-                        <ul>
-                            <li class="tdproject">SMS Magic app developed on Salesforce CRM needed new billing features. </li>
-                            <li class="tdproject">Created Backend APIs to support 3 kinds of billing features (Per message, Monthly and Yearly).</li>
-                            <li class="tdproject">Created Backend services to fetch messaging data in customized manner for 2000+ Customers on daily, monthly and yearly basis.</li>
-                        </ul>
-                        &nbsp;
-                    </td>
-                    <td>Salesforce, Apex language(wrapper on Java), SOQL, Javascript&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="tdname">Automation testing tool&nbsp; [Company: SMS-Magic, Duration:11/2019-12/2019]</td>
-                    <td>
-                        <ul>
-                            <li class="tdproject">Created automation test cases for verifying SMS Magic web and mobile app.</li>
-                            <li class="tdproject">Wrote 30+ customized tests for testing all the features of the application. </li>
-                        </ul>
-                        &nbsp;
-                    </td>
-                    <td>Selenium, Java&nbsp;</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        You can contact me via email: divyanshi259dixit@gmail.com or<br> Contact No: +1-(425)-205-5176
-        
-        <p>My Resume <a href="/Divyanshi_Dixit_Software_Engineer.pdf">Divyanshi_Dixit_Software_Engineer</a>.</p>
-        <table id="tablecontact">
-            <tbody>
-            <tr>
-                <td class="leftcol">                    
-                    <!-- Link Section for Social Media and other relevant links-->
-                        <!-- Linkedin -->
-                    <a class="links"
-                        href="https://www.linkedin.com/in/divyanshi-dixit/" 
-                        target="_blank">
-                        <!-- Use the website https://i.ibb.co/ to host your image for free  -->
-                        <img alt="linkedin" class="icon" src="https://i.ibb.co/6tYqxy7/linkedin.png">
-                    </a>
-                        <!-- GitHub -->
-                    <span>
-                    <a class="links"
-                        href="https://github.com/divi-259" 
-                        target="_blank">
-                        <img alt="github" class="icon" src="https://i.ibb.co/sykYvJF/github.png">
-                    </a>
-                    </span>
-                        
-                        <!-- HashNode -->
-                    <span>
-                    <a class="links"
-                        href="https://booleanbit1.hashnode.dev/" 
-                        target="_blank">
-                        <img alt="HashNode" class="icon" src="https://i.ibb.co/9H1rfzd/hashnodeicon.png">
-                    </a>
-                    </span>
-
-                        <!-- Leetcode -->
-                    <span>
-                    <a class="links" 
-                        href="https://leetcode.com/booleanbit1/" 
-                        target="_blank">
-                        <img alt="Leetcode" class="icon" src="https://i.ibb.co/8bmTtrm/leetcode.png">
-                    </a>
-                    </span>
-
-                        <!-- Geeksforgeeks -->
-                    <span>
-                    <a class="links" 
-                        href="https://auth.geeksforgeeks.org/user/boolean1" 
-                        target="_blank">
-                        <img alt="Geeksforgeeks" class="icon" src="https://i.ibb.co/26kZGt8/g4g.png">
-                    </a>
-                    </span>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </section>
-    
-    <footer>
-        <p>&copy; Divyanshi Dixit - 2023</p>
-    </footer>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/divyanshi-dixit/" target="_blank">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </a>
+          <a href="https://github.com/divi-259" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="mailto:divyanshi259dixit@gmail.com">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+           
+        </div>
+        <p><a href="/Divyanshi_Dixit_Software_Engineer.pdf">Download My Resume Here</a></p> 
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+<footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 Divyanshi Dixit. All Rights Reserved.</p>
+  
+        <!-- Optional: Social Media Links Again -->
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/divyanshi-dixit/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/divi-259" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:divyanshi259dixit@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
