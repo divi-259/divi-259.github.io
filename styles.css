@@ -201,13 +201,22 @@ body {
     background: #16a085;
     transform: scale(1.1);
   }
-  .project img {
+  .project-img {
+    width: 240px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image fills the area while cropping excess */
+    border-radius: 10px; /* Optional: adds rounded corners for aesthetics */
+    display: block; /* Ensures proper layout behavior */
+    margin: 0 auto; /* Centers the image horizontally within the parent */
+    transition: transform 0.3s ease;
+  }
+  /* .project img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
-  }
+  } */
   
   .project:hover img {
     transform: scale(1.05);
@@ -403,6 +412,15 @@ body {
   
   .education-item:hover p, .experience-item:hover p {
     color: #333;
+  }
+
+  .experience-item h3 img {
+    width: 30px; /* Set the desired width */
+    height: 20px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image fills the area while cropping excess */
+    border-radius: 10px; /* Optional: adds rounded corners for aesthetics */
+    margin: 0 auto; /* Centers the image horizontally within the parent */
+    transition: transform 0.3s ease;
   }
 
   /* Contact Section */
