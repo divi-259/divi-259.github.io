@@ -3,291 +3,546 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Divyanshi Dixit — Software Engineer · MCS Student</title>
+  <meta name="description" content="Backend software engineer with industry experience at Nvidia and SLB, now pursuing an MS in Computer Science at Arizona State University. Focused on systems, problem solving, and continuous technical growth.">
+  <meta name="author" content="Divyanshi Dixit">
+  <meta property="og:title" content="Divyanshi Dixit — Software Engineer · MCS Student">
+  <meta property="og:description" content="Backend software engineer with industry experience at Nvidia and SLB. Currently MCS @ ASU. Focused on systems, problem solving, and continuous growth.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://divi-259.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Sticky Top Nav -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="#intro" class="topnav-brand">Divyanshi Dixit</a>
+      <div class="topnav-links">
+        <a href="#journey">Journey</a>
+        <a href="#reading">Reading</a>
+        <a href="#exploring">Exploring</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="Divyanshi_Dixit_Software_Engineer.pdf" class="topnav-cta" target="_blank">Resume</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
   <header class="hero">
-    <section id="intro" class="intro">
-    <div class="hero-content">
-      <h1>Hi, I'm Divyanshi</h1>
-      <p>I'm a software engineer with experience in backend technologies.</p>
-      <a href="#about" class="btn">ABOUT ME</a>
-      <a href="#projects" class="btn">MY WORK</a>
-      <a href="#skills" class="btn">SKILLS</a>
-      <a href="#experience" class="btn">EXPERIENCE</a>
-      <a href="#contact" class="btn">CONTACT</a>
+    <div class="hero-bg-pattern" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="geo-pattern" x="0" y="0" width="140" height="140" patternUnits="userSpaceOnUse">
+            <circle cx="70" cy="70" r="44" fill="none" stroke="#6B8E72" stroke-width="0.7"/>
+            <circle cx="0" cy="0" r="22" fill="none" stroke="#1F4D3A" stroke-width="0.5"/>
+            <circle cx="140" cy="140" r="22" fill="none" stroke="#1F4D3A" stroke-width="0.5"/>
+            <line x1="0" y1="70" x2="140" y2="70" stroke="#6B8E72" stroke-width="0.35"/>
+            <line x1="70" y1="0" x2="70" y2="140" stroke="#6B8E72" stroke-width="0.35"/>
+            <polygon points="70,36 104,70 70,104 36,70" fill="none" stroke="#1F4D3A" stroke-width="0.4"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#geo-pattern)"/>
+      </svg>
     </div>
+
+    <!-- Floating decorative shapes -->
+    <div class="hero-shape hero-shape--ring" aria-hidden="true"></div>
+    <div class="hero-shape hero-shape--diamond" aria-hidden="true"></div>
+    <div class="hero-shape hero-shape--dots" aria-hidden="true">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#1F4D3A">
+          <circle cx="10" cy="10" r="2"/><circle cx="40" cy="10" r="2"/><circle cx="70" cy="10" r="2"/><circle cx="100" cy="10" r="2"/>
+          <circle cx="10" cy="40" r="2"/><circle cx="40" cy="40" r="2"/><circle cx="70" cy="40" r="2"/><circle cx="100" cy="40" r="2"/>
+          <circle cx="10" cy="70" r="2"/><circle cx="40" cy="70" r="2"/><circle cx="70" cy="70" r="2"/><circle cx="100" cy="70" r="2"/>
+          <circle cx="10" cy="100" r="2"/><circle cx="40" cy="100" r="2"/><circle cx="70" cy="100" r="2"/><circle cx="100" cy="100" r="2"/>
+        </g>
+      </svg>
+    </div>
+
+    <section id="intro" class="intro">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Software Engineer · MCS Student · Continuous Learner</p>
+        <h1>Building Software.<br>Solving Problems.<br><span class="hero-accent">Always Learning.</span></h1>
+        <p class="hero-sub">Backend software engineer pursuing an MS in Computer Science at Arizona State University. Focused on systems, problem solving, and continuous technical growth.</p>
+        <p class="hero-prev">Previously: Software Engineering at <strong>Nvidia</strong> · <strong>SLB</strong></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-arrow-right"></i> View Projects</a>
+          <a href="Divyanshi_Dixit_Software_Engineer.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-file-pdf"></i> Resume</a>
+        </div>
+
+        <!-- Currently status panel -->
+        <div class="currently-panel" aria-label="Currently">
+          <p class="currently-title">Currently</p>
+          <div class="currently-rows">
+            <div class="currently-row">
+              <span class="currently-icon" aria-hidden="true">🎓</span>
+              <div>
+                <p class="currently-label">MCS Student</p>
+                <p class="currently-value">Arizona State University</p>
+              </div>
+            </div>
+            <div class="currently-row">
+              <span class="currently-icon" aria-hidden="true">📚</span>
+              <div>
+                <p class="currently-label">Reading</p>
+                <p class="currently-value"><em>Designing Machine Learning Systems</em> &mdash; Chip Huyen</p>
+              </div>
+            </div>
+            <div class="currently-row">
+              <span class="currently-icon" aria-hidden="true">💡</span>
+              <div>
+                <p class="currently-label">Focus Areas</p>
+                <p class="currently-value">Machine Learning Systems · Backend Engineering · Distributed Systems</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </header>
+
   <!-- About Me Section -->
-    <section id="about" class="about">
-        <div class="container">
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm Divyanshi Dixit, a Software Engineer specializing in backend development. With expertise in C++, Java, TypeScript, Node.js, Python, and Cloud platforms, I focus on building scalable and efficient systems. I’m passionate about automating workflows using Bash and PowerShell and always strive for clean, maintainable code.
-
-I’m driven by the challenge of solving complex problems and continuously learning new technologies to stay ahead in the ever-evolving tech landscape.
-        </p>
-        </div>
-    </section>
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <img src="/img/WEBGISProject.jpg" alt="Project Image" class="project-img">
-                <h3>Web GIS for Primary School Education</h3>
-                <p>Mapped demographic data of Primary Schools Students, Teachers, etc using PostGIS</p>
-                <a href="https://divi-259.github.io/Web_GIS_For_Primary_Education/" target="_blank" class="btn">View Project</a>
-              </div>              
-              <div class="project">
-                <img src="/img/TrackFitProject.jpg" alt="Project Image" class="project-img">
-                <h3>Track Fit</h3>
-                <p>A Website to track your fitness goals using Google Sheets API Integrations</p>
-                <a href="https://divi-259.github.io/Track_Fit/" target="_blank" class="btn">View Project</a>
-              </div>              
-              <div class="project">
-                <img src="https://images.pexels.com/photos/2882630/pexels-photo-2882630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project Image" class="project-img">
-                <h3>Password Generator</h3>
-                <p>Password Generation app in react native, which generates password based on given inputs.</p>
-                <a href="https://github.com/divi-259/passwordGenerator" target="_blank" class="btn">View Project</a>
-              </div>              
-              <div class="project">
-                <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Image" class="project-img">
-                <h3>MCP Server</h3>
-                <p>Created a test MCP server for learning</p>
-                <a href="https://github.com/divi-259/mymcp" target="_blank" class="btn">View Project</a>
-              </div>          
-        </div>
-    </section>
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">
-            <h3>Languages</h3>
-            <p>
-                <ul>
-                    <li>C++</li>
-                    <li>Java</li>
-                    <li>Golang</li>
-                    <li>TypeScript</li>
-                </ul></p>
-            </div>
-            <div class="skill">
-            <h3>Backend & Frameworks</h3>
-            <p>
-                <ul>
-                    <li>Salesforce using Apex</li>
-                    <li>NodeJS</li>
-                    <li>Express</li>
-                    <li>React Native</li>
-                    <li>REST APIs</li>
-                </ul></p>
-            </div>
-            <div class="skill">
-            <h3>Cloud & DevOps</h3>
-            <p>
-                <ul>
-                    <li>Google Cloud</li>
-                    <li>Azure Cloud</li>
-                    <li>CI/CD</li>
-                    <li>Docker</li>
-                    <li>Kubernetes</li>
-                    <li>Jenkins</li>
-                </ul></p>
-            </div>
-            <div class="skill">
-            <h3>Scripting</h3>
-            <p><ul>
-                <li>Python</li>
-                <li>Powershell</li>
-                <li>Bash</li>
-            </ul></p>
-            </div>
-            <div class="skill">
-            <h3>Tools & Others</h3>
-            <p>
-            <ul>
-                <li>Git, Github, Gitlab</li>
-                <li>SQL and Cloud SQL</li>
-                <li>MySQL, Redis and Cloud datastores</li>
-                <li>Postman and Curl</li>
-                <li>Swagger and YAML</li>
-                <li>Linux and Unix </li>
-            </ul>
-            </p>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-        <h2>Education</h2>
-        <div class="education-grid">
-            <div class="education-item">
-            <h3>University of Allahabad</h3>
-            <p><b>Bachelor of Technology in Computer Science</b></p>
-            <p>GPA: 3.2/4</p>
-            <p><b>Relevant Courses:</b> Data Structures, Algorithms, Database Systems, Computer Networks, Artificial Intelligence, Digital Electronics, Compiler Design, Theory of Computation,</p>
-            
-            </div>
-            <div class="education-item">
-                <h3>Motilal Nehru National Institute of Technology</h3>
-                <p><b>Master of Technology in Computer Science</b></p>
-                <p>GPA: 3.7/4</p>
-                <p><b>Relevant Courses:</b> Advanced Algorithms, Advanced data Modeling, Wireless and Mobile Networks, Advanced Computer Networks</p>
-                
-                </div>
-            <div class="education-item">
-            <h3>Certifications</h3>
-            <ul>
-                <li><a href="https://www.hackerrank.com/certificates/b46bef84ba57" target="_blank">Java Intermediate Certificate</a></li>
-                <li><a href="https://www.hackerrank.com/certificates/9cedb339959c" target="_blank">SQL(Basic) Certificate</a></li>
-                <li><a href="https://www.hackerrank.com/certificates/d27cc9c6f962" target="_blank">Hackerrank Problem Solving Certificate </a></li>
-                <li><a href="https://moonshot.scaler.com/s/sl/23rcv7dC0N?_gl=1*1evjfy1*_ga*NzU1Nzk0NTczLjE2OTAxNTg4Njk.*_ga_53S71ZZG1X*MTY5MjY2NzM0MS4xNS4xLjE2OTI2NzI1OTIuMC4wLjA." target="_blank">SQL Vs. NoSQL Course</a></li>
-                <li><a href="https://moonshot.scaler.com/s/sl/f_DULMOw5H?_gl=1*1id0pua*_ga*NzU1Nzk0NTczLjE2OTAxNTg4Njk.*_ga_53S71ZZG1X*MTY5MDU3OTI3Ny4zLjEuMTY5MDU4NDUzNC4wLjAuMA.." target="_blank">Maths for Programmers</a></li>
-            </ul>
-            </div>
-            <div class="education-item">
-            <h3>Online Presence</h3>
-            <ul>
-                <li><a href="https://leetcode.com/u/booleanbit1/" target="_blank">Leetcode Profile</a></li>
-                <li><a href="https://www.geeksforgeeks.org/user/boolean1/?ref=header_profile" target="_blank">Geeksforgeeks Profile</a></li>
-                <li><a href="https://www.hackerrank.com/profile/booleanbit1" target="_blank">Hackerrank Profile</a></li>
-                <li><a href="https://booleanbit1.substack.com/" target="_blank">Substack Profile (Tech Articles)</a></li>
-                <li><a href="https://booleanbit1.hashnode.dev/" target="_blank">HashNode Profile (Tech Articles)</a></li>
-            </ul>
-            </div>
-        </div>
-        </div>
-    </section>
-  
-  
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-        <h2>Experience</h2>
-        <div class="experience-grid">
-            <div class="experience-item">
-            <h3>Software GPU Intern - Nvidia <img src="https://img.icons8.com/?size=100&id=yqf95864UzeQ&format=png&color=000000" title="nvidia icons"></a>
-            </h3>
-            <p>Aug 2018 - Mar 2019</p>
-            <p>
-                <ul>
-                    <li>Worked on NVAPI SDK Support for Linux OS in NVAPI Team using C++</li>
-                    <li>Developed a testing tool to automate testing for more than 150 APIs with 100% test coverage.</li>
-                    <li>Used GDB Debugger for debugging and testing the NV-APIs</li>
-                    <li>Tested and modified different generation GPUs features using internal testing tool</li>
-                </ul>
-            </p>
-            </div>
-            <div class="experience-item">
-            <h3>Software Developer - SMS Magic Mobile Media Pvt. Ltd. 
-              <i class="fa-solid fa-comment-dots" style="color: #ea9148;"></i>
-            </h3>
-            <p>Jul 2019 - Jan 2020</p>
-            <p>
-                <ul>
-                    <li>Designed and developed new billing features, including a customized subscription plan with per message, monthly,
-                        and annual billing options.</li>
-                    <li>Built a dashboard for end customers to view messaging data.</li>
-                    <li>Implemented and maintained RESTful APIs for the messaging system using Java.
-                    </li>
-                </ul>
-            </p>
-            </div>
-            <div class="experience-item">
-                <h3>Software Engineer - SLB (F/K/A Schlumberger)</h3>
-                <p>Jan 2020 - Nov 2022</p>
-                <p>
-                    <ul>
-                        <li>Leveraged Golang, Google Pub/Sub, and Bash scripting to design and implement an internal file sync infrastructure,
-                            improving the company's file management capabilities.</li>
-                        <li>Lead a VM deletion project utilizing Azure and Google Cloud platform and using Azuredevops pipeline, resulting in
-                            nearly 50% cost savings for the company</li>
-                        <li>Streamlined API development and maintenance by transitioning to Axios and implementing correlation ID logging and
-                            functional testing using Postman
-                        </li>
-                        <li>Created automated testing and deployment pipelines with Azure DevOps, for image testing and deployments.</li>
-                    </ul>
-                </p>
-                </div>
-        </div>
-        </div>
-    </section>
-  
-  <!-- Contact Me Section -->
-<section id="contact" class="contact">
+  <section id="about" class="about reveal">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>If you have any questions, feel free to reach out!</p>
-  
-      <div class="contact-form">
-        <form action="https://formspree.io/f/xldelqan" method="POST">
-          <div class="input-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your Name">
+      <h2>About Me</h2>
+      <p>
+        I'm a software engineer who believes the best engineers never stop learning. My path has taken me from a B.Tech and M.Tech in Computer Science, through building GPU driver APIs at <strong>Nvidia</strong> and internal cloud infrastructure at <strong>SLB</strong>, into a stretch of <strong>continuous self-directed learning</strong> — interview preparation, system design study, and personal projects — followed by freelance web development for small businesses, and now into graduate studies at Arizona State University.
+      </p>
+      <p>
+        I'm comfortable across <strong>Go, C++, Java, TypeScript, Node.js, and Python</strong>, and across cloud platforms (<strong>GCP, Azure, Docker, Kubernetes</strong>). What ties every chapter together is the same engineer's instinct: <strong>solve hard problems, ship clean code, and dig into the systems underneath</strong>. I'm preparing for the next software engineering opportunity — somewhere I can build, learn, and contribute at depth.
+      </p>
+    </div>
+  </section>
+
+  <!-- My Journey Timeline -->
+  <section id="journey" class="journey">
+    <div class="container">
+      <h2 class="reveal">My Journey</h2>
+      <p class="section-intro reveal">A timeline of continuous growth — industry experience, deliberate learning, and graduate studies.</p>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">2018 – 2022</div>
+          <div class="timeline-card">
+            <h3>Industry Experience</h3>
+            <p>Software engineering roles at <strong>Nvidia</strong> (GPU driver APIs, C++), <strong>SMS Magic</strong> (Java, billing platform), and <strong>SLB</strong> (Go, cloud infrastructure, ~50% VM cost savings).</p>
           </div>
-          <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="Your Email">
-          </div>
-          <div class="input-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-  
-      <!-- Contact Info Section with Icons -->
-      <div class="contact-info">
-        <p>Or you can reach me via:</p>
-        
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/divyanshi-dixit/" target="_blank">
-            <i class="fab fa-linkedin-in"></i> LinkedIn
-          </a>
-          <a href="https://github.com/divi-259" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="mailto:divyanshi259dixit@gmail.com">
-            <i class="fas fa-envelope"></i> Email
-          </a>
-           
         </div>
-        <p><a href="/Divyanshi_Dixit_Software_Engineer.pdf">Download My Resume Here</a></p> 
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">2022 – 2024</div>
+          <div class="timeline-card">
+            <h3>Deepening Fundamentals</h3>
+            <p>Stepped into focused self-directed study — advanced algorithms, system design, interview preparation, and personal projects. Sharpened the foundations behind production software.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">2024 – 2026</div>
+          <div class="timeline-card">
+            <h3>Freelance Web Development</h3>
+            <p>Delivered custom e-commerce websites for local and offline businesses, partnering with another developer. Owned client communication, scope, and shipping.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">May 2026</div>
+          <div class="timeline-card">
+            <h3>MS Computer Science @ Arizona State University</h3>
+            <p>Started the Master of Computer Science program — going deep on machine learning systems, distributed systems, and advanced software engineering.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">Next</div>
+          <div class="timeline-card timeline-card--next">
+            <h3>Next Software Engineering Opportunity</h3>
+            <p>Actively preparing to return to a full-time software engineering role where I can build at depth, contribute to real systems, and keep growing.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
+  <!-- Currently Reading Section -->
+  <section id="reading" class="reading">
+    <div class="container">
+      <h2 class="reveal">Currently Reading</h2>
+      <p class="section-intro reveal">Ongoing learning is the engine behind my engineering practice.</p>
+
+      <div class="reading-grid">
+        <div class="reading-card reveal">
+          <p class="reading-eyebrow">Current Read</p>
+          <h3>Designing Machine Learning Systems</h3>
+          <p class="reading-author">Chip Huyen</p>
+          <p class="reading-summary">A practical guide to designing, deploying, and maintaining ML systems in production — covering data engineering, model deployment, monitoring, and the trade-offs that come with running ML at scale.</p>
+        </div>
+
+        <div class="reading-card reveal">
+          <p class="reading-eyebrow">Current Read</p>
+          <h3>Beyond Cracking the Coding Interview</h3>
+          <p class="reading-author">Gayle Laakmann McDowell, Mike Mroczka, Aline Lerner &amp; Nil Mamano</p>
+          <p class="reading-summary">A modern follow-up to the classic interview-prep book — broader coverage of system design, behavioral rounds, and the realities of today's technical interview loops.</p>
+        </div>
+      </div>
+
+      <!-- Previous Reads -->
+      <div class="previous-reads reveal">
+        <h3 class="previous-reads-title">Previously Read</h3>
+        <ul class="previous-reads-list">
+          <!-- Add or remove entries below as needed -->
+          <li>
+            <span class="prev-book-title">Designing Data-Intensive Applications</span>
+            <span class="prev-book-author">Martin Kleppmann</span>
+          </li>
+          <li>
+            <span class="prev-book-title">Cracking the Coding Interview</span>
+            <span class="prev-book-author">Gayle Laakmann McDowell</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Currently Exploring Section -->
+  <section id="exploring" class="exploring">
+    <div class="container">
+      <h2 class="reveal">Currently Exploring</h2>
+      <p class="section-intro reveal">Active areas of study and curiosity right now.</p>
+      <div class="exploring-grid">
+
+        <div class="exploring-card reveal">
+          <div class="exploring-icon"><i class="fas fa-brain"></i></div>
+          <h3>Machine Learning Systems</h3>
+          <p>How real-world ML pipelines are built, deployed, and kept reliable at scale.</p>
+        </div>
+
+        <div class="exploring-card reveal">
+          <div class="exploring-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Distributed Systems</h3>
+          <p>Consistency, fault tolerance, and the trade-offs that shape large-scale software.</p>
+        </div>
+
+        <div class="exploring-card reveal">
+          <div class="exploring-icon"><i class="fas fa-cubes"></i></div>
+          <h3>System Design</h3>
+          <p>Designing services that stay simple, observable, and resilient as they grow.</p>
+        </div>
+
+        <div class="exploring-card reveal">
+          <div class="exploring-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend Engineering</h3>
+          <p>APIs, data pipelines, and infrastructure — the layer where most production complexity actually lives.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="reveal">Experience</h2>
+      <div class="experience-grid">
+
+        <div class="experience-item reveal">
+          <h3>Freelance Web Developer
+            <i class="fas fa-code" style="color: #1F4D3A;"></i>
+          </h3>
+          <p class="exp-date">2024 – 2026</p>
+          <ul>
+            <li>Designed and delivered custom e-commerce websites for local and offline businesses, partnering with another developer.</li>
+            <li>Implemented responsive UIs, product-catalog management, and customer-facing checkout features.</li>
+            <li>Worked directly with clients to gather requirements, scope features, and ship production-ready solutions.</li>
+          </ul>
+          <p class="tech-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Responsive UI</span><span>E-commerce</span></p>
+        </div>
+
+        <div class="experience-item reveal">
+          <h3>Software Engineer — SLB (F/K/A Schlumberger)</h3>
+          <p class="exp-date">Jan 2020 – Nov 2022</p>
+          <ul>
+            <li>Designed and implemented an internal file-sync infrastructure with <strong>Golang, Google Pub/Sub, and Bash</strong>, improving company-wide file-management capabilities.</li>
+            <li>Led a VM-deletion initiative across Azure and Google Cloud using Azure DevOps pipelines, delivering <strong>~50% cost savings</strong>.</li>
+            <li>Streamlined API development by transitioning to Axios and implementing correlation-ID logging plus Postman-based functional testing.</li>
+            <li>Built automated testing and deployment pipelines on Azure DevOps for image testing and release.</li>
+          </ul>
+          <p class="tech-tags"><span>Go</span><span>GCP</span><span>Azure</span><span>Pub/Sub</span><span>Azure DevOps</span><span>Bash</span></p>
+        </div>
+
+        <div class="experience-item reveal">
+          <h3>Software Developer — SMS Magic Mobile Media Pvt. Ltd.
+            <i class="fa-solid fa-comment-dots" style="color: #6B8E72;"></i>
+          </h3>
+          <p class="exp-date">Jul 2019 – Jan 2020</p>
+          <ul>
+            <li>Designed and shipped new billing features — per-message, monthly, and annual subscription plans — for the messaging platform.</li>
+            <li>Built a customer-facing dashboard for end users to view messaging data and usage.</li>
+            <li>Implemented and maintained RESTful APIs for the messaging system in <strong>Java</strong>.</li>
+          </ul>
+          <p class="tech-tags"><span>Java</span><span>REST APIs</span><span>Billing Systems</span></p>
+        </div>
+
+        <div class="experience-item reveal">
+          <h3>Software GPU Intern — Nvidia
+            <img src="https://img.icons8.com/?size=100&id=yqf95864UzeQ&format=png&color=000000" alt="Nvidia logo" title="Nvidia">
+          </h3>
+          <p class="exp-date">Aug 2018 – Mar 2019</p>
+          <ul>
+            <li>Worked on NVAPI SDK support for Linux in the NVAPI team using <strong>C++</strong>.</li>
+            <li>Developed a testing tool that automated testing for <strong>150+ APIs with 100% test coverage</strong>.</li>
+            <li>Used GDB for debugging NV-APIs and tested features across multiple GPU generations with internal tools.</li>
+          </ul>
+          <p class="tech-tags"><span>C++</span><span>Linux</span><span>GDB</span><span>NVAPI SDK</span></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="reveal">Featured Projects</h2>
+      <p class="section-intro reveal">A selection of work spanning geospatial data, fitness tracking, mobile development, and developer tooling.</p>
+      <div class="project-grid">
+        <div class="project reveal">
+          <img src="img/ReservoirSamplingProject.jpg" alt="Reservoir Sampling Visualizer — stream of items being sampled into a fixed-size reservoir" class="project-img">
+          <h3>Reservoir Sampling Visualizer</h3>
+          <p>Full-stack web app that visualizes the Reservoir Sampling algorithm on streaming data. The backend streams CSV files line-by-line through a simulation engine and pushes every accept / replace / reject decision to the React UI over WebSockets — memory stays at <strong>O(K)</strong> regardless of input size.</p>
+          <p class="tech-tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>Socket.IO</span><span>Tailwind</span></p>
+          <div class="project-actions">
+            <a href="https://reservoir-sampling-visualizer.onrender.com/" target="_blank" class="btn">Live Demo →</a>
+            <a href="https://github.com/divi-259/reservoir_sampling_visualizer" target="_blank" class="btn btn-ghost">View Code</a>
+          </div>
+        </div>
+        <div class="project reveal">
+          <img src="img/WEBGISProject.jpg" alt="Web GIS for Primary School Education" class="project-img">
+          <h3>Web GIS for Primary School Education</h3>
+          <p>Mapped demographic data of primary-school students, teachers, and facilities using PostGIS for spatial analysis.</p>
+          <p class="tech-tags"><span>PostGIS</span><span>PostgreSQL</span><span>JavaScript</span></p>
+          <a href="https://divi-259.github.io/Web_GIS_For_Primary_Education/" target="_blank" class="btn">View Project →</a>
+        </div>
+<div class="project reveal">
+          <img src="https://images.pexels.com/photos/2882630/pexels-photo-2882630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Password Generator app" class="project-img">
+          <h3>Password Generator</h3>
+          <p>React Native app that generates secure passwords based on user-defined length and character-set inputs.</p>
+          <p class="tech-tags"><span>React Native</span><span>TypeScript</span></p>
+          <a href="https://github.com/divi-259/passwordGenerator" target="_blank" class="btn">View Code →</a>
+        </div>
+        <div class="project reveal">
+          <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="MCP Server project" class="project-img">
+          <h3>MCP Server</h3>
+          <p>Exploratory MCP (Model Context Protocol) server for integrating tools with LLM clients — a hands-on dive into the MCP spec.</p>
+          <p class="tech-tags"><span>TypeScript</span><span>Node.js</span><span>MCP</span></p>
+          <a href="https://github.com/divi-259/mymcp" target="_blank" class="btn">View Code →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="reveal">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill reveal">
+          <h3>Languages</h3>
+          <p class="tech-tags tech-tags-large">
+            <span>C++</span><span>Java</span><span>Go</span><span>TypeScript</span><span>Python</span>
+          </p>
+        </div>
+        <div class="skill reveal">
+          <h3>Backend & Frameworks</h3>
+          <p class="tech-tags tech-tags-large">
+            <span>Node.js</span><span>Express</span><span>React Native</span><span>REST APIs</span><span>Salesforce Apex</span>
+          </p>
+        </div>
+        <div class="skill reveal">
+          <h3>Cloud & DevOps</h3>
+          <p class="tech-tags tech-tags-large">
+            <span>Google Cloud</span><span>Azure</span><span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>CI/CD</span>
+          </p>
+        </div>
+        <div class="skill reveal">
+          <h3>Scripting</h3>
+          <p class="tech-tags tech-tags-large">
+            <span>Python</span><span>Bash</span><span>PowerShell</span>
+          </p>
+        </div>
+        <div class="skill reveal">
+          <h3>Tools & Data</h3>
+          <p class="tech-tags tech-tags-large">
+            <span>Git/GitHub/GitLab</span><span>SQL</span><span>MySQL</span><span>Redis</span><span>Postman</span><span>Swagger</span><span>Linux/Unix</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2 class="reveal">Education</h2>
+      <div class="education-grid">
+
+        <div class="education-item edu-highlight reveal">
+          <h3>Arizona State University <span class="edu-badge edu-badge-active">Currently Enrolled</span></h3>
+          <p><b>Master of Computer Science</b></p>
+          <p>May 2026 – Present</p>
+          <p class="edu-note">Advancing core CS depth with formal graduate study.</p>
+        </div>
+
+        <div class="education-item reveal">
+          <h3>Motilal Nehru National Institute of Technology</h3>
+          <p><b>Master of Technology in Computer Science</b></p>
+          <p>GPA: 3.7 / 4</p>
+          <p><b>Relevant Courses:</b> Advanced Algorithms, Advanced Data Modeling, Wireless and Mobile Networks, Advanced Computer Networks</p>
+        </div>
+
+        <div class="education-item reveal">
+          <h3>University of Allahabad</h3>
+          <p><b>Bachelor of Technology in Computer Science</b></p>
+          <p>GPA: 3.2 / 4</p>
+          <p><b>Relevant Courses:</b> Data Structures, Algorithms, Database Systems, Computer Networks, Artificial Intelligence, Digital Electronics, Compiler Design, Theory of Computation</p>
+        </div>
+
+        <div class="education-item reveal">
+          <h3>Certifications</h3>
+          <ul>
+            <li><a href="https://www.hackerrank.com/certificates/b46bef84ba57" target="_blank">Java Intermediate — HackerRank</a></li>
+            <li><a href="https://www.hackerrank.com/certificates/9cedb339959c" target="_blank">SQL (Basic) — HackerRank</a></li>
+            <li><a href="https://www.hackerrank.com/certificates/d27cc9c6f962" target="_blank">Problem Solving — HackerRank</a></li>
+            <li><a href="https://moonshot.scaler.com/s/sl/23rcv7dC0N" target="_blank">SQL vs. NoSQL — Scaler</a></li>
+            <li><a href="https://moonshot.scaler.com/s/sl/f_DULMOw5H" target="_blank">Maths for Programmers — Scaler</a></li>
+          </ul>
+        </div>
+
+        <div class="education-item reveal">
+          <h3>Online Presence</h3>
+          <ul>
+            <li><a href="https://leetcode.com/u/booleanbit1/" target="_blank"><i class="fas fa-code"></i> LeetCode</a></li>
+            <li><a href="https://www.geeksforgeeks.org/user/boolean1/" target="_blank"><i class="fas fa-code"></i> GeeksforGeeks</a></li>
+            <li><a href="https://www.hackerrank.com/profile/booleanbit1" target="_blank"><i class="fab fa-hackerrank"></i> HackerRank</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing & Notes (demoted from primary section) -->
+  <section id="writing" class="writing-section">
+    <div class="container">
+      <h2 class="reveal">Writing & Notes</h2>
+      <p class="section-intro reveal">A small side practice — I occasionally write up what I'm learning.</p>
+      <div class="writing-links reveal">
+        <a href="https://booleanbit1.substack.com/" target="_blank" class="writing-link">
+          <i class="fas fa-newspaper"></i>
+          <span>Substack — Engineering Notes</span>
+        </a>
+        <a href="https://booleanbit1.hashnode.dev/" target="_blank" class="writing-link">
+          <i class="fas fa-blog"></i>
+          <span>Hashnode — Technical Posts</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="reveal">Get in Touch</h2>
+      <p class="reveal">Open to software engineering opportunities, collaborations, and graduate-school networking. The fastest way to reach me is below.</p>
+
+      <div class="contact-quick reveal">
+        <a href="Divyanshi_Dixit_Software_Engineer.pdf" class="contact-card" target="_blank">
+          <i class="fas fa-file-pdf"></i>
+          <span>Download Resume</span>
+        </a>
+        <a href="mailto:divyanshi259dixit@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <span>divyanshi259dixit@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/divyanshi-dixit/" class="contact-card" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/divi-259" class="contact-card" target="_blank">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <details class="contact-form-wrap">
+        <summary>Or send a message via this form</summary>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xldelqan" method="POST">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Your Email">
+            </div>
+            <div class="input-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </details>
+    </div>
+  </section>
+
   <!-- Footer Section -->
-<footer id="footer" class="footer">
+  <footer id="footer" class="footer">
     <div class="container">
       <div class="footer-content">
-        <p>&copy; 2024 Divyanshi Dixit. All Rights Reserved.</p>
-  
-        <!-- Optional: Social Media Links Again -->
+        <p>&copy; 2026 Divyanshi Dixit. Building software. Solving problems. Always learning.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/divyanshi-dixit/" target="_blank">
+          <a href="https://www.linkedin.com/in/divyanshi-dixit/" target="_blank" aria-label="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/divi-259" target="_blank">
+          <a href="https://github.com/divi-259" target="_blank" aria-label="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="mailto:divyanshi259dixit@gmail.com">
+          <a href="mailto:divyanshi259dixit@gmail.com" aria-label="Email">
             <i class="fas fa-envelope"></i>
           </a>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Fade-up on scroll -->
+  <script>
+    (function() {
+      var elements = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        elements.forEach(function(el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      elements.forEach(function(el) { io.observe(el); });
+    })();
+  </script>
 </body>
 </html>
